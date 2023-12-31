@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title> PTJ | Portfolio </title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <h1 id="home">&lt;PTJ/></h1>
+        </div>
+        <div class="nav-ancord">
+            <a href="#home" class="nav-elements">Home</a>
+            <a href="#about-section" class="nav-elements">About Me</a>
+            <a href="#projects" class="nav-elements">Projects</a>
+            <a href="#contact" class="nav-elements">Contact</a>
+        </div>
+        <div class="inputs">
+            <img src="/img/chile.png" alt="chile-flag" class="flags">
+            <input type="checkbox" class="check" checked>
+            <img src="/img/uk.png" alt="uk-flag" class="flags">
+        </div>
+    </nav>
+    <main>
+        <section class="home-content" id="home">
+            <h1 id="welcome">Welcome!</h1>
+            <div> <h2 id="myname">My name is <span id="pato">Patricio</span></h2> </div>
+            <div> <h3 id="developer">Full-Stack Web Developer</h3> </div>
+            <div class="social-ancords">
+                <a href="https://www.linkedin.com/in/patricio-torres-jara-4b89b928b" target="_blank"><img class="social-icon" src="/img/linkedinw.png" alt="linkedin-icon"></a>
+                <a href="#contact"><img class="social-icon" src="/img/emailw.png" alt="email-icon"></a>
+                <a href="https://github.com/LFourOne" target="_blank"><img class="social-icon" src="/img/githubw.png" alt="github-icon"></a>
+            </div>
+        </section>
+        <section class="about-content" id="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-subcontent">
+                <div class="aboutme-parraphs">
+                    <span id="fullnamepato"> Patricio Torres Jara </span>
+                    <p class="parraphs"> 
+                        I am a professional with experience in Front-End and Back-End development, specialized in technologies such as; <span id="html-text">HTML</span>, <span id="css-text">CSS</span>, <span id="js-text">JavaScript</span>, <span id="py-text">Py</span><span id="thon-text">thon</span>, <span id="flask-text">Flask</span> y <span id="my-text">My</span><span id="sql-text">SQL</span>.
+                    </p>
+                    <p class="parraphs">
+                        My approach to work is based on responsibility, proactivity, and adaptability. 
+                        I have successfully tackled complex challenges, demonstrating my ability to work collaboratively and find effective solutions.
+                    </p>
+                    <p class="parraphs">
+                        I consider myself a dedicated individual committed to learning new things, and I am always seeking opportunities to expand my skills and knowledge.
+                    </p>
+                </div>
+                <div class="aboutme-skills">
+                    <div class="skill-card">
+                        <img class="icon" src="/img/html.png" alt="html-icon">
+                        <div><span> HTML </span></div>
+                    </div>
+                    <div class="skill-card">
+                        <img class="icon" src="/img/css.png" alt="css-icon">
+                        <div><span> CSS </span></div>
+                    </div>
+                    <div class="skill-card">
+                        <img class="icon" src="/img/js.png" alt="js-icon">
+                        <div><span> JavaScript </span></div>
+                    </div>
+                    <div class="skill-card">
+                        <img class="icon" src="/img/mysql.png" alt="mysql-icon">
+                        <div><span> MySQL </span></div>
+                    </div>
+                    <div class="skill-card">
+                        <img class="icon" src="/img/python.png" alt="python-icon">
+                        <div><span> Python </span></div>
+                    </div>
+                    <div class="skill-card">
+                        <img class="icon" src="/img/flask.png" alt="flask-icon">
+                        <div><span> Flask </span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project-container" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="cards-container">
+                <div class="project-card">
+                    <img class="photo-card" src="/img/gymmeet2.png" alt="GymMeet">
+                    <h3>GymMeet</h3>
+                    <p class="parraph-card">Web application that connects users interested in the fitness world with coaches who wish to offer their services to the public.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-container" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-info">
+                <form action="https://formsubmit.co/patotorres0710@gmail.com" method="POST" target="_blank">
+                    <div class="label">
+                        <label for="name">Name:</label>
+                        <input class="text-bar" type="text" name="name" id="name" placeholder="Your Name..." required>
+                    </div>
+                    <div class="label">
+                        <label for="email">Email:</label>
+                        <input class="text-bar" type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="label">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="submit-container">
+                        <input id="submit-btn" type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Patricio Torres Jara © 2024</span>
+    </footer>
+</body>
+</html>

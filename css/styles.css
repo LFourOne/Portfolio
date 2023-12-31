@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.a{
+    text-decoration: none;
+    color: #ffe1fe;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    background-color: #140222;
+    background: linear-gradient(90deg, rgba(20,2,34,1) 0%, rgb(30, 4, 49) 50%, rgba(20,2,34,1) 100%);
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    color: #faf5ff;
+    padding-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: space-around;
+}
+nav a{
+    text-decoration: none;
+    color: #ffe1fe;
+}
+.logo{
+    color: #ffe1fe;
+}
+.nav-ancord {
+    display: flex;
+    align-items: center;
+    color: #f4e1f5;
+    gap: 50px;
+}
+.nav-elements{
+    cursor: pointer;
+}
+.nav-elements:hover{
+    padding-top: 3px;
+    border-bottom: 3px solid purple;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flags{
+    height: 20px;
+}
+.check{
+    position: relative;
+    width: 50px;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #585061;
+    border-radius: 25px;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    transition: 0.25s;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked::after{
+    left: 25px;
+}
+.check:checked::before{
+    background-color: #585061;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 440px;
+    color: white;
+    align-items: center;
+    font-size: 55px;
+    gap: 10px;
+}
+#welcome{
+    font-size: 50px;
+    color: #ffff00;
+}
+#myname{
+    font-size: 80px;
+    color: #fffde8;
+}
+#pato{
+    font-size: 80px;
+    color: #8dc6ce;
+}
+#developer{
+    font-size: 40px;
+    color: #ebbe42;
+}
+.social-ancords{
+    display: flex;
+    height: 0px;
+    gap: 20px
+}
+.social-icon{
+    height: 30px;
+    margin-top: 10px;
+}
+.social-icon:hover{
+    height: 35px;
+    filter: hue-rotate(180deg);
+}
+/* Todo para arriba es para el home */
+/* Todo para abajo es para el about */
+.about-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 420px;
+    margin-bottom: 450px;
+    color: white;
+    align-items: center;
+    font-size: 30px;
+    gap: 10px;
+}
+.section-title{
+    color: #ffe1fe;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.about-subcontent{
+    display: flex;
+    margin-top: 130px;
+}
+.aboutme-parraphs{
+    display: flex;
+    flex-direction: column;
+    max-width: 1050px;
+    flex: 1;
+}
+#fullnamepato{
+    font-size: 30px;
+    font-weight: 600;
+    color: #8dc6ce;
+}
+.parraphs{
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 22px;
+}
+#html-text{
+    color: #ebbe42;
+}
+#css-text{
+    color: #ebbe42;
+}
+#js-text{
+    color: #ebbe42;
+}
+#py-text{
+    color: #ebbe42;
+}
+#thon-text{
+    color: #ebbe42;
+}
+#flask-text{
+    color: #ebbe42;
+}
+#my-text{
+    color: #ebbe42;
+}
+#sql-text{
+    color: #ebbe42;
+}
+.aboutme-skills{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: space-around;
+    flex: 1;
+}
+.skill-card{
+    flex-basis: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    gap: 10px;
+}
+.icon{
+    height: 50px;
+    transition: transform 0.70s ease;
+}
+.icon:hover{
+    transform: rotate(360deg);
+}
+/* Todo para arriba es para el about */
+/* Todo para abajo es para el projects */
+.project-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 420px;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+.project-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+    gap: 10px;
+}
+.photo-card{
+    height: 250px;
+    border-radius: 8px;
+}
+.parraph-card{
+    text-align: left;
+    width: 250px;
+}
+/* Todo para arriba es para el projects */
+/* Todo para abajo es para el contact */
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 420px;
+    width: 500px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.text-bar{
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    height: 35px;
+    width: 400px;
+}
+#message{
+    height: 95px;
+    width: 398px;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+.submit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+#submit-btn{
+    margin-top: 10px;
+    height: 35px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ebbe42;
+    color: #140222;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* Todo para arriba es para el contact */
+/* Todo para abajo es para el footer */
+footer{
+    display: flex;
+    justify-content: center;
+    color: #ffe1fe;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .section-title{
+        font-size: 25px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    .nav-ancord{
+        display: none;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .home-content{
+        margin-top: 150px;
+        margin-bottom: 300px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .flags{
+        height: 15px;
+    }
+    #welcome{
+        font-size: 27px;
+    }
+    #myname{
+        font-size: 29px;
+    }
+    #pato{
+        font-size: 29px;
+    }
+    #developer{
+        font-size: 20px;
+    }
+    .social-icon{
+        height: 20px;
+    }
+    .social-icon:hover{
+        height: 24px;
+    }
+    .about-content{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .about-subcontent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .aboutme-parraphs{
+        display: flex;
+        flex-direction: column;
+    }
+    #fullnamepato{
+        font-size: 20px;
+    }
+    .parraphs{
+        font-size: 16px;
+    }
+    .skill-card{
+        flex-basis: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        gap: 10px;
+    }
+    .icon{
+        height: 40px;
+    }
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 330px;
+        width: 200px;
+        gap: 10px;
+    }
+    .photo-card{
+        height: 150px;
+        border-radius: 8px;
+    }
+    .parraph-card{
+        width: 150px;
+        text-align: center;
+        font-size: 15px;
+    }
+    .contact-container{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        border: 1px solid white;
+        border-radius: 15px;
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .text-bar{
+        margin-top: 5px;
+        border-radius: 5px;
+        border: none;
+        padding: 5px;
+        height: 35px;
+        width: 250px;
+    }
+    #message{
+        height: 95px;
+        width: 248px;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+    .submit-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    #submit-btn{
+        margin-top: 10px;
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        background-color: #ebbe42;
+        color: #140222;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        color: #ffe1fe;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .section-title{
+        font-size: 35px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px
+    }
+    .nav-ancord{
+        font-size: 15px;
+    }
+    .logo{
+        font-size: 15px;
+    }
+    .home-content{
+        margin-top: 150px;
+        margin-bottom: 300px;
+        font-size: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .flags{
+        height: 15px;
+    }
+    #welcome{
+        font-size: 50px;
+    }
+    #myname{
+        font-size: 60px;
+    }
+    #pato{
+        font-size: 60px;
+    }
+    #developer{
+        font-size: 30px;
+    }
+    .social-icon{
+        height: 30px;
+    }
+    .social-icon:hover{
+        height: 34px;
+    }
+    .about-content{
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .about-subcontent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+    }
+    .aboutme-parraphs{
+        display: flex;
+        flex-direction: column;
+    }
+    #fullnamepato{
+        font-size: 25px;
+    }
+    .parraphs{
+        font-size: 20px;
+    }
+    .skill-card{
+        flex-basis: calc(50% - 20px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        gap: 10px;
+    }
+    .icon{
+        height: 50px;
+    }
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 360px;
+        width: 210px;
+        gap: 10px;
+    }
+    .photo-card{
+        height: 180px;
+        border-radius: 8px;
+    }
+    .parraph-card{
+        width: 150px;
+        text-align: center;
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    .about-subcontent{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .parraphs{
+        font-size: 25px;
+    }
+    .skill-card{
+        font-size: 25px;
+    }
+    .icon{
+        height: 60px;
+    }
+}
