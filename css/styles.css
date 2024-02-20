@@ -209,6 +209,10 @@ nav a{
 }
 /* Todo para arriba es para el about */
 /* Todo para abajo es para el projects */
+.cards-container{
+    display: flex;
+    gap: 50px;
+}
 .project-container{
     display: flex;
     flex-direction: column;
@@ -234,7 +238,8 @@ nav a{
     border-radius: 8px;
 }
 .parraph-card{
-    text-align: left;
+    text-align: center;
+    text-wrap: balance;
     width: 250px;
 }
 /* Todo para arriba es para el projects */
@@ -380,6 +385,11 @@ footer{
     }
     .icon{
         height: 40px;
+    }
+    .cards-container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
     .project-card{
         display: flex;
