@@ -160,28 +160,7 @@ nav a{
     margin-top: 15px;
     font-size: 22px;
 }
-#html-text{
-    color: #ebbe42;
-}
-#css-text{
-    color: #ebbe42;
-}
-#js-text{
-    color: #ebbe42;
-}
-#py-text{
-    color: #ebbe42;
-}
-#thon-text{
-    color: #ebbe42;
-}
-#flask-text{
-    color: #ebbe42;
-}
-#my-text{
-    color: #ebbe42;
-}
-#sql-text{
+.text{
     color: #ebbe42;
 }
 .aboutme-skills{
