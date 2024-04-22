@@ -386,7 +386,11 @@ footer{
     }
     .photo-card{
         height: 150px;
+        width: 150px;
         border-radius: 8px;
+    }
+    .photo-card:hover{
+        width: 160px;
     }
     .parraph-card{
         width: 150px;
